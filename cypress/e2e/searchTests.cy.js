@@ -28,7 +28,7 @@ describe('Search Tests', () => {
     itemPage.elements.productDetails().contains("Vintage").should('exist')
   })
 
-  it.only('Add to favorites than remove', () => {
+  it('Add to favorites than remove', () => {
     navbar.search("hats")
     searchResultsPage.addTenthToFavorites()
     cy.wait(5000)
